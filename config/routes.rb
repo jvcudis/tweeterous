@@ -1,4 +1,16 @@
 Tweeterous::Application.routes.draw do
+  root :to => "Pages#home"
+
+  get "pages/home"
+  get "pages/contact"
+  get "pages/about"
+
+  get "tweets/index"
+  get "users/index"
+
+  resources :pages
+  resources :users
+  resources :tweets
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

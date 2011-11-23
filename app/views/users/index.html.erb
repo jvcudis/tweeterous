@@ -1,0 +1,7 @@
+<h1>Users</h1>
+
+<%= link_to 'Create Account', new_user_path %>
+<br>
+<% for user in @users %>
+  <%= user.name %> | <%= user.email %>
+<% end %>

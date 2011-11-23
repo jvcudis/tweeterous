@@ -1,0 +1,220 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none outside none;
+}
+
+body {
+    background-color: #2A1D15;
+    color: #9B805A;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	font-size: 11px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #E3A357;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 120%;
+}
+
+p {
+    color: #9B805A;
+    font: 12px/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #8F6639;
+    font-weight: bold;
+}
+
+a {
+    color: #E3A357;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C4AD7E;
+}
+
+#wrap {
+    float: left;
+    width: 100%;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 900px;
+}
+
+/* --- Header Styling --- */
+#header {
+    background: url(<%= asset_path File.join('backgrounds', 'header_line.jpg') %>) no-repeat scroll center bottom transparent;
+    float: left;
+    width: 100%;
+}
+
+#header .wrap {
+    background: url(<%= asset_path File.join('backgrounds', 'header.jpg') %>) no-repeat scroll 0 0 transparent;
+    height: 130px;
+}
+
+#header h1 a {
+    display: block;
+    margin: 50px 0 0 0;
+    float: left;
+    height: 80px;
+    overflow: hidden;
+    width: 360px;
+    letter-spacing: -2px;
+  	font-size: 36px;
+}
+
+#header ul {
+    float: right;
+    margin: 60px 50px 0 0;
+}
+
+#header li {
+    display: block;
+    float: left;
+    font: 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+#header li a {
+    display: block;
+    float: left;
+    height: 40px;
+    margin-top: 30px;
+    width: 40px;
+}
+
+/* --- Banner Styling --- */
+#banner {
+    background-image: url(<%= asset_path File.join('backgrounds', 'banner_bg.jpg') %>);
+    float: left;
+    width: 100%;
+}
+
+#banner .wrap {
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner .quotes {
+    background: url(<%= asset_path File.join('backgrounds', 'baner_degt_bg.jpg') %>) no-repeat scroll left top transparent;
+    float: left;
+    height: 250px;
+    padding: 120px 450px 0 10px;
+    position: absolute;
+    width: 420px;
+}
+
+#banner h1 {
+    color: #E3A357;
+    font: 26px "Trebuchet MS","Lucida Grande",Lucida,Verdana,sans-serif;
+    letter-spacing: -1px;
+}
+
+#banner h2 {
+    color: #8F6639;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#banner a.button {
+    display: table;
+    margin: 20px 0 0 50px;
+    padding: 10px;
+    font: 20px "Trebuchet MS","Lucida Grande",Lucida,Verdana,sans-serif;
+    color: #000000;
+    background: #9B805A;
+    border: 2px solid #E3A357;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -html-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* --- Footer Styling --- */
+#home #footer {
+    background: url(<%= asset_path File.join('backgrounds', 'main_bg2.jpg') %>) no-repeat scroll center top transparent;
+    float: left;
+    width: 100%;
+}
+
+#footer {
+    background: url(<%= asset_path File.join('backgrounds', 'main_bg2.jpg') %>) no-repeat scroll center -50px transparent;
+    float: left;
+    width: 100%;
+}
+
+#footer .wrap {
+    padding: 10px;
+    width: 880px;
+}
+
+#footer .col {
+    float: left;
+    padding: 20px 0;
+    width: 270px;
+}
+
+#footer .col_left {
+    background: url(<%= asset_path File.join('backgrounds', 'dotted_vertical.gif') %>) no-repeat scroll right top transparent;
+    padding-right: 15px;
+}
+
+#footer .col_center {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#footer .col_right {
+    background: url(<%= asset_path File.join('backgrounds', 'dotted_vertical.gif') %>) no-repeat scroll left top transparent;
+    padding-left: 25px;
+}
+
+#footer ul {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+#footer li {
+    background: url("images/list_row_bg.gif") no-repeat scroll left 3px transparent;
+    clear: left;
+    list-style: none outside none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+#footer h1 {
+    color: #D3BF94;
+    font: 18px "Lucida Grande",Lucida,Verdana,sans-serif;
+    margin-bottom: 10px;
+}
+
+#credits {
+    background: url(<%= asset_path File.join('backgrounds', 'footer_bg_top.gif') %>) repeat-x scroll 0 0 #161110;
+    background-color: #0F0C0A;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#credits p {
+    text-align: center;
+    color: #3A3027;
+}
